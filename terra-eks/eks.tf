@@ -2,6 +2,7 @@ module "eks" {
 
     #import the EKS module from the Terraform Registry
   source  = "terraform-aws-modules/eks/aws"
+  version = "19.10.0"
   
 
 

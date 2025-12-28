@@ -1,0 +1,42 @@
+# Terraform DevOps Infrastructure
+
+This repository contains Infrastructure as Code (IaC) built using **Terraform** to provision and manage AWS cloud resources using 
+
+It implements **Remote Terraform State, State Locking, and Modular Infrastructure** similar to how real companies manage cloud environments.
+
+---
+
+##  What This Project Does
+
+This project automates the following AWS infrastructure:
+
+- **Remote Terraform backend** using **S3**
+- **State file locking** using **DynamoDB**
+- **EKS (Kubernetes) cluster** provisioning
+- **EC2 instance** provisioning with NGINX
+- **Reusable Terraform modules**
+- Secure and scalable cloud infrastructure deployment
+
+---
+
+## 🧩 Architecture Overview
+
+This project follows a **layered infrastructure design**:
+
+1. **Remote Backend Layer**
+   - S3 stores Terraform state files
+   - DynamoDB provides state locking
+
+2. **Network & Compute Layer**
+   - VPC, subnets, and security groups
+   - EC2 for application workloads
+   - EKS for containerized applications
+
+3. **Application Layer**
+   - Terraform modules used to deploy reusable application infrastructure
+
+
+
+
+
+
