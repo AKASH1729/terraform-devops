@@ -1,0 +1,30 @@
+# Terraform
+**/.terraform/*
+**/*.tfstate
+**/*.tfstate.*
+**/*.tfvars
+**/*.tfvars.json
+**/crash.log
+**/*.backup
+**/.terraform.lock.hcl
+
+
+# Sensitive files
+
+**/*.pem
+**/*.key
+**/*.env
+
+# OS & IDE
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+
+# SSH Keys
+**/terraform_key
+**/terraform_key.pub
+**/*.pem
+**/*.key
+**/*.ppk
